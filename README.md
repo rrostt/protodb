@@ -35,11 +35,13 @@ Usage
 -----
 
 From PHP:
+
 	create a db.php file that establishes a mysql database connection and selects database.
 	include('protodb.php');
 	Use the functions from DB:: which is a class with static functions.
 	
 From Javascript:
+
 	<script src="protodb.php?_js"></script>
 	<script>
 		protodb.insert("books", {author:"Mattias Rost", title:"ProtoDB for dummies"});
@@ -51,5 +53,6 @@ From Javascript:
 	</script>
 	
 From other external client:
+
 	To insert, HTTP POST with _protodb variable set, and "cmd=insert", "table=books", "values={\"author\":\"Mattias Rost\", \"title\":\"ProtoDB for dummies\"}"
 	To get, HTTP GET with _protodb, and "cmd=get", and optional where, json-string.
