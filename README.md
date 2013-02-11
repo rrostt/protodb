@@ -56,3 +56,9 @@ From other external client:
 
 	To insert, HTTP POST with _protodb variable set, and "cmd=insert", "table=books", "values={\"author\":\"Mattias Rost\", \"title\":\"ProtoDB for dummies\"}"
 	To get, HTTP GET with _protodb, and "cmd=get", and optional where, json-string.
+
+Credits
+=======
+Mattias Rost
+http://rost.me
+
