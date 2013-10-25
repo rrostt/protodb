@@ -1,11 +1,10 @@
-<?
+<?php
 /**
 Some database help functions. Also establishes database connection to get started quickly.
 db_url, db_user, db_passwd, and database are set in config.
 **/
 
-
-		require_once('config.php');
+	require_once('config.php');
 
         mysql_connect($db_url, $db_user, $db_passwd);
         @mysql_select_db($database) or die("could not select database");

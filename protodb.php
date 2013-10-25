@@ -100,7 +100,7 @@ class DB {
 		}
 	}
 
-	function parseJoin($join, $rhs) {	// parseJoin("<", "updates(rooms.id=updates.rooms_id)")
+	static function parseJoin($join, $rhs) {	// parseJoin("<", "updates(rooms.id=updates.rooms_id)")
 		$cmd = "LEFT JOIN";
 		switch ($join) {
 		case "<": $cmd = "LEFT JOIN"; break;
@@ -136,7 +136,7 @@ class DB {
 		allows tables to be specified such that "users < userinfo(users.id=userinfo.userid)" will do
 		a users LEFT JOIN userinfo ON users.id=userinfo.userid.
 	*/
-	function parseTableStatement($table) {
+	static function parseTableStatement($table) {
 		$parts = explode(" ", $table);
 		if (count($parts)>1) {
 			$i = 0;

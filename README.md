@@ -1,7 +1,7 @@
 ProtoDB
 =======
 
-v0.1
+v0.1.1
 
 Library for simple and quick use of databases when prototyping new applications and service.
 
